@@ -19,7 +19,7 @@ definitions, or acroynyms. This website simply solves all of these problems!
  10. After contributing, you will get a helper role on the discord, your earned it! ;)
 
 <video src="https://github.com/user-attachments/assets/fb531c18-b55e-44ff-8b1f-0498fa883317
-" width="200" controls></video>
+" width="2" controls></video>
 
 # EMBEDDING LINKS 
  Embedding links can only happen within the text box description, if needed do like so, at any point in the description:
