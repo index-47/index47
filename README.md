@@ -15,7 +15,7 @@ definitions, or acroynyms. This website simply solves all of these problems!
  5. All comments on template are to be adapted to your requested search, remove all instances (except html starter) of all comment tags
  6. Follow the comments written in the template.html to contribute
  7. If links need to be embedded within description follow embedding links section below
- 8. Go to the index.html file in the docs folder, go to line 261, and add your topic in the same format as shown, review comments 
+ 8. Go to the index.html file in the docs folder, go to line 256, and add your topic in the same format as shown, review comments 
  9. Please ask questions if confused, do NOT pull request if uncertain
  10. After contributing, you will get a helper role on the discord, your earned it! ;)
 
