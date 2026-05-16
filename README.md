@@ -18,7 +18,6 @@ definitions, or acroynyms. This website simply solves all of these problems!
  8. Go to the index.html file in the docs folder, go to line 256, and add your topic in the same format as shown, review comments 
  9. Please ask questions if confused, do NOT pull request if uncertain
  10. After contributing, you will get a helper role on the discord, your earned it! ;)
- 11. 
 
 https://github.com/user-attachments/assets/e9083a9b-de35-41aa-8cfe-98a61b04b3f6
 
