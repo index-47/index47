@@ -9,7 +9,7 @@ definitions, or acronyms. This website simply solves all of these problems!
 2. Send a message in #suggestion-addtions about what contribution you are making, use example
 3. Follow steps below for contributing on an existing search or making a new search
 4. Wait for approval from developer
-   ### **Contribute to Existing search or micellanous**
+   ### **Contribute to Existing search, UI, or micellanous**
              1. Make sure all general contributing steps are completed above
              2. Fork Index47
              3. Make the changes that you got approval for
