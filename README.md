@@ -9,7 +9,7 @@ definitions, or acronyms. This website simply solves all of these problems!
 2. Send a message in #suggestion-addtions about what contribution you are making, use example
 3. Follow steps below for contributing on an existing search or making a new search
 4. Wait for approval from developer
-5. If embedding links, use this format, example: (LINK: www. youtube.com/watch?v=dQw4w9WgXcQ, LINK COVER: youtube)
+5. If embedding links, use this format, example: (LINK: www.youtube.com/watch?v=dQw4w9WgXcQ, LINK COVER: youtube)
  <img width="373" height="13" alt="Screenshot 2026-05-18 2 08 57 PM" src="https://github.com/user-attachments/assets/a60b0573-42d4-414f-b3e8-c71dbc5e5c69" />
 
 
