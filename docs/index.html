@@ -82,6 +82,8 @@
         apex:["apex.html","Apex Pathing"],
     }
 
+    const noPrefix = new Set(["swerve", "gobilda", "swyft","github","rev","onshape","apex"]);
+
     function show(){
         const v=document.getElementById("search").value.toLowerCase()
         const box=document.getElementById("box")
@@ -102,32 +104,7 @@
             const d=document.createElement("div")
             d.className="item"
 
-            d.innerText =
-                k === "swerve"
-                ? pages[k][1]
-                : k.toUpperCase() + " — " + pages[k][1]
-            d.innerText =
-                k === "apex"
-                ? pages[k][1]
-                : k.toUpperCase() + " — " + pages[k][1]
-            d.innerText =
-                k === "onshape"
-                ? pages[k][1]
-                : k.toUpperCase() + " — " + pages[k][1]
-            d.innerText =
-                k === "github"
-                ? pages[k][1]
-                : k.toUpperCase() + " — " + pages[k][1]
-            d.innerText =
-                k === "gobilda"
-                ? pages[k][1]
-                : k.toUpperCase() + " — " + pages[k][1]
-            d.innerText =
-                k === "swyft"
-                ? pages[k][1]
-                : k.toUpperCase() + " — " + pages[k][1]
-            d.innerText =
-                k === "rev"
+            d.innerText = noPrefix.has(k)
                 ? pages[k][1]
                 : k.toUpperCase() + " — " + pages[k][1]
 
