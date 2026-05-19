@@ -117,6 +117,40 @@ body.light .btn:hover {
 
 .btn:hover img { opacity: 1; }
 
+/* ── Text buttons (no styling) ── */
+.btn-text {
+    width: auto;
+    height: auto;
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+body.light .btn-text {
+    color: var(--muted);
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+}
+
+.btn-text:hover {
+    color: var(--text);
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+}
+
+body.light .btn-text:hover {
+    color: var(--text);
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+}
+
 /* ── Main ── */
 .container {
     position: relative;
