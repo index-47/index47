@@ -124,10 +124,11 @@ body.light .btn:hover {
     border: none;
     background: none;
     box-shadow: none;
-    padding: 0;
+    padding: 8px 12px;
     color: var(--muted);
     font-size: 13px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 body.light .btn-text {
