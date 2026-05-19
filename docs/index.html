@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index47</title>
+
     <link rel="stylesheet" href="index.css">
 
 </head>
@@ -78,55 +79,68 @@
 
 <script>
 
-    const pages={
-    opr:["opr.html","Offensive Power Rating"],
-    cad:["cad.html","Computer Aided Design"],
-    sotm:["sotm.html","Shoot on the move"],
-    ri3d:["ri3d.html","Robot in 3 days"],
-    lut:["lut.html","Lookup Table"],
-    swerve:["swerve.html","Swerve"],
-    pid:["pid.html","Proportional Integral Derivative"],
-    pp:["pp.html","Pedro Pathing"],
-    rr:["rr.html","Road Runner"],
-    itd:["itd.html","Into the Deep"],
-    cs:["cs.html","Centerstage"],
-    ypp:["ypp.html","Youth Protection Program"],
-    //when adding new page, follow exact syntax above
-
+    const pages = {
+        as:["AS.html","Android Studio"],
+        onshape:["onshape.html","Onshape"],
+        rev:["REV.html","REV Robotics"],
+        gobilda:["gobilda.html","goBILDA"],
+        swyft:["swyft.html","Swyft Robotics"],
+        github:["github.html","GitHub"],
+        opr:["opr.html","Offensive Power Rating"],
+        cad:["cad.html","Computer Aided Design"],
+        sotm:["sotm.html","Shoot on the move"],
+        ri3d:["ri3d.html","Robot in 3 days"],
+        lut:["lut.html","Lookup Table"],
+        swerve:["swerve.html","Swerve"],
+        pid:["pid.html","Proportional Integral Derivative"],
+        pp:["pp.html","Pedro Pathing"],
+        rr:["rr.html","Road Runner"],
+        itd:["itd.html","Into the Deep"],
+        cs:["cs.html","Centerstage"],
+        ypp:["ypp.html","Youth Protection Program"],
+        ff:["ff.html","Feedforward"],
+        apex:["apex.html","Apex Pathing"],
+        larp:["larp.html","Live Action Role Play"]
     }
+
+    const noPrefix = new Set(["swerve", "gobilda", "swyft","github","rev","onshape","apex"]);
 
     function show(){
-    const v=document.getElementById("search").value.toLowerCase()
-    const box=document.getElementById("box")
+        const v=document.getElementById("search").value.toLowerCase()
+        const box=document.getElementById("box")
 
-    box.innerHTML=""
+        box.innerHTML=""
 
-    if(!v){
-    box.style.display="none"
-    return
-    }
+        if(!v){
+            box.style.display="none"
+            return
+        }
 
-    const matches=Object.keys(pages).filter(k=>
-    k.includes(v)||
-    pages[k][1].toLowerCase().includes(v)
-    )
+        const matches=Object.keys(pages).filter(k=>
+            k.includes(v)||
+            pages[k][1].toLowerCase().includes(v)
+        )
 
-    matches.forEach(k=>{
-    const d=document.createElement("div")
-    d.className="item"
-    d.innerText=k.toUpperCase()+" — "+pages[k][1]
-    d.onclick=()=>location.href=pages[k][0]
-    box.appendChild(d)
-    })
+        matches.forEach(k=>{
+            const d=document.createElement("div")
+            d.className="item"
 
-    box.style.display=matches.length?"block":"none"
+            d.innerText = noPrefix.has(k)
+                ? pages[k][1]
+                : k.toUpperCase() + " — " + pages[k][1]
+
+            d.onclick=()=>location.href=pages[k][0]
+            box.appendChild(d)
+        })
+
+        box.style.display=matches.length?"block":"none"
     }
 
     function enter(e){
-    if(e.key==="Enter"){
-    const v=document.getElementById("search").value.toLowerCase()
-    if(pages[v])location.href=pages[v][0]
-    }
+        if(e.key==="Enter"){
+            const v=document.getElementById("search").value.toLowerCase()
+            if(pages[v])location.href=pages[v][0]
+        }
     }
 
     // theme
@@ -140,11 +154,11 @@
     }
 
     function openAbout(){
-    document.getElementById("about").style.display="flex"
+        document.getElementById("about").style.display="flex"
     }
 
     function closeAbout(){
-    document.getElementById("about").style.display="none"
+        document.getElementById("about").style.display="none"
     }
 
     function openCredits(){
@@ -156,13 +170,13 @@
     }
 
     document.addEventListener("keydown",e=>{
-    if(e.key==="Escape"){ closeAbout(); closeCredits() }
+        if(e.key==="Escape")closeAbout()
     })
 
     document.addEventListener("mousemove",e=>{
-    const glow=document.getElementById("glow")
-    glow.style.left=e.clientX+"px"
-    glow.style.top=e.clientY+"px"
+        const glow=document.getElementById("glow")
+        glow.style.left=e.clientX+"px"
+        glow.style.top=e.clientY+"px"
     })
 
 </script>
